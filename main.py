@@ -112,7 +112,7 @@ def main():
             break
     print(f"You are betting ${bet} on {lines} lines. Total bet is equal to: ${total_bet}")
     
-    slots = get_slot_machine_spin(ROWS, COLS, symbol_count)
+    slots = get_slot_machine_spin(ROWS, COLS, symbol_value)
     print_slot_machine(slots)
     winnings = check_winnings(slots, lines, bet, symbol_value)
     winnings,winnings_lines = check_winnings(slots, lines, bet, symbol_value)
